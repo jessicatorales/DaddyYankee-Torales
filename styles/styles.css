@@ -17,13 +17,9 @@ body {
     flex-direction: column;
 }
 
-.grid__inicio {
-    display: grid;
-    grid-template-areas:
-        "picture__inicio texto__inicio";
-    grid-template-columns: 1fr 1fr;
-    row-gap: 10px;
-    column-gap: 10px;
+.div__inicio{
+    display: flex;
+    flex-direction: row;
 }
 
 /* NAV */
@@ -103,21 +99,16 @@ p.texto__inicio {
 .picture__inicio {
     display: flex;
     justify-content: center;
-}
-
-.picture__inicio>img {
-    object-fit: cover;
-    width: 90%;
-    align-self: center;
-    max-height: 90%;
     margin: 10px;
-    border: 5px rgb(44, 42, 42) solid;
 }
 
-img.imagen__inicio {
-    border: 5px rgb(44, 42, 42) solid;
-    margin: auto;
-    display: block;
+
+
+.imagen__inicio {
+    border: 5px rgb(44, 42, 42) solid;   
+   width: 100%;
+   
+  
 }
 
 
@@ -393,12 +384,6 @@ button {
     color: white;
 }
 
-@media screen and (max-width: 480px) {
-    .div__contacto p {
-        font-size: 30px;
-    }
-}
-
 @media screen and (max-width: 992px) {
     .header__nav__lista a {
         display: none;
@@ -412,8 +397,7 @@ button {
         justify-content: center;
     }
 
-    .grid__inicio {
-        display: flex;
+    .div__inicio {       
         flex-direction: column;
         width: 100%;
         height: 1fr;
@@ -426,5 +410,11 @@ button {
 
     .div__contacto {
         width: 70%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .div__contacto p {
+        font-size: 30px;
     }
 }

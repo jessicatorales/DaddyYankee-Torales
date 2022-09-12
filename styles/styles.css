@@ -1,11 +1,397 @@
-header{
-    
+/* @font-face {
+    font-family: vagner;
+    src: url(../fonts/Vanger.otf);
 }
 
-@media screen and (max-width: 992px) {
-    
+:root {
+    --spacing-small: 1rem;
 }
 
-@media screen and (max-width: 480px) {
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: vagner;
 }
+
+body {
+    background-color: rgb(80, 77, 77);
+}
+
+img {
+    width: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        " header"
+        " main"
+        " footer";
+    grid-template-rows: 100px 1fr 75px;
+    grid-template-columns: auto;
+    height: 100vh;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+
+.header {
+    background-color: rgb(26, 26, 26);
+
+}
+
+.header__nav {
+    width: 100%;
+    display: flex;
+
+}
+
+.header__nav__logo img {
+    width: 100px;
+}
+
+.header__nav__lista ul {
+    background-color: rgb(26, 26, 26);
+    list-style: none;
+    margin: 15px;
+
+}
+
+.header__nav__lista {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header__nav__lista li {
+    padding: 20px;
+    display: inline-block;
+}
+
+.header__nav__lista a {
+    text-decoration: none;
+    padding: 10px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    color: rgb(233, 218, 14);
+    font-size: 30px;
+}
+
+.header__nav__lista a:hover {
+    background-color: rgb(233, 218, 14);
+    color: rgb(26, 26, 26);
+}
+
+
+
+.div__main {
+    display: grid;
+}
+
+.div__titulo {
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.div__titulo .titulo__inicio {
+    color: rgb(204, 201, 19);
+    font-size: 80px;
+    margin: 30px;
+}
+
+.div__imagen {
+    justify-content: center;
+    width: 70%;
+    margin: 0 auto;
+
+}
+
+.imagen {
+    border: 5px rgb(44, 42, 42) solid;
+}
+
+.div__main p {
+    font-size: 50px;
+    color: whitesmoke;
+    margin: 50px;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: black;
+}
+
+.footer ul {
+    background-color: rgb(26, 26, 26);
+    list-style: none;
+    text-align: end;
+}
+
+.footer img {
+    width: 30px;
+}
+
+.footer li {
+    padding: 20px;
+    display: inline-block;
+}
+
+.footer a {
+    text-decoration: none;
+    color: rgb(233, 218, 14);
+    font-size: 30px;
+}
+
+
+.div__galeria1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.div__galeria1 p {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+}
+
+.div__fotos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.fotos__img img {
+    border: 5px rgb(34, 34, 34) solid;
+    object-fit: cover;
+}
+
+
+
+.div__galeria2 p {
+    font-size: 90px;
+    color: white;
+    text-align: center;
+
+}
+
+.div__videos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.videos__iframe {
+    width: 400px;
+    height: 300px;
+    margin: 1rem;
+}
+
+
+.div__albumes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.div__albumes iframe {
+    width: 400px;
+    height: 380px;
+    margin: 10px;
+
+}
+
+.div__albumes p {
+    font-size: 30px;
+    color: rgb(235, 229, 124);
+    text-align: center;
+}
+
+.div__albumes .p__albumes {
+    font-size: 50px;
+    color: rgb(241, 241, 241);
+    text-align: center;
+}
+
+.div__albumes .div__album {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+
+.section__flex {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.div__biografia {
+    font-size: 40px;
+    color: white;
+    width: 80%;
+    justify-content: center;
+}
+
+.p__biografia {
+    font-size: 70px;
+    color: white;
+    display: table;
+    margin: auto;
+}
+
+.div__biografia p {
+    text-align: center;
+}
+
+
+
+.p__tour__title {
+    font-size: 60px;
+    display: table;
+    margin: auto;
+    color: rgb(233, 218, 14);
+}
+
+.div__tour {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.div__tour__sub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+
+}
+
+.div__tour__sub p,
+button {
+    margin: 0 auto;
+}
+
+.div__tour__sub p {
+    font-size: 30px;
+    color: white;
+}
+
+.div__tour__sub button {
+    text-decoration: none;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+    background-color: rgb(236, 222, 27);
+    font-size: 25px;
+}
+
+.div__tour__sub button:hover {
+    background-color: rgb(177, 166, 14);
+}
+
+.div__tour__sub button:active {
+    background-color: rgb(136, 128, 10);
+    color: white;
+}
+
+
+
+.div__contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+.div__contacto__sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 20px;
+}
+
+.div__contacto__sub label {
+    font-size: 30px;
+    color: white;
+}
+
+.div__contacto__sub input {
+    font-size: 20px;
+}
+
+.div__contacto__sub textarea {
+    font-size: 20px;
+    min-width: 450px;
+    max-width: 450px;
+    min-height: 60px;
+    max-height: 120px;
+}
+
+.div__contacto__sub .btn__contacto {
+    text-decoration: none;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    margin: 0 auto;
+    background-color: rgb(236, 222, 27);
+    font-size: 40px;
+
+}
+
+.btn__contacto:hover {
+    background-color: rgb(177, 166, 14);
+}
+
+.btn__contacto:active {
+    background-color: rgb(136, 128, 10);
+    color: white;
+}
+ */
+body {
+    min-height: 100vh;
+    margin: 0;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    min-height: 50px;
+}
+
+footer {
+    min-height: 50px;
+}
+@media screen and (max-width: 480px) {}
+
+@media only screen and (max-width:585px) {
+    #navbarBar li {
+        float: none;
+    }
+}
+@media screen and (max-width: 992px) {}
+

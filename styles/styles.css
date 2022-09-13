@@ -374,13 +374,13 @@ button {
 body {
     min-height: 100vh;
     margin: 0;
-
     display: grid;
     grid-template-rows: auto 1fr auto;
 }
 
 header {
     min-height: 50px;
+    padding: 0;
 }
 
 footer {
@@ -389,9 +389,7 @@ footer {
 @media screen and (max-width: 480px) {}
 
 @media only screen and (max-width:585px) {
-    #navbarBar li {
-        float: none;
-    }
+    
 }
 @media screen and (max-width: 992px) {}
 

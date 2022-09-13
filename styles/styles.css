@@ -382,14 +382,19 @@ header {
     min-height: 50px;
     padding: 0;
 }
-
+header li{
+    align-self: end;
+}
 footer {
     min-height: 50px;
 }
 @media screen and (max-width: 480px) {}
 
 @media only screen and (max-width:585px) {
-    
+    footer {
+        display: absolute;
+        margin: 0 auto;
+    }
 }
 @media screen and (max-width: 992px) {}
 

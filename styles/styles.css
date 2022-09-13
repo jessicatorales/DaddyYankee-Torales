@@ -371,30 +371,43 @@ button {
     color: white;
 }
  */
-body {
-    min-height: 100vh;
-    margin: 0;
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+ body {
 }
 
 header {
-    min-height: 50px;
-    padding: 0;
+  min-height: 50px;
+  padding: 0;
 }
-header li{
-    align-self: end;
+header li {
+  align-self: end;
 }
 footer {
-    min-height: 50px;
+  min-height: 50px;
 }
-@media screen and (max-width: 480px) {}
 
-@media only screen and (max-width:585px) {
-    footer {
-        display: absolute;
-        margin: 0 auto;
+main {
+  padding: 50px 0;
+}
+
+.lead {
+  padding: 25px 0;
+}
+
+picture img {
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+}
+
+@media screen and (max-width: 585px) {
+    iframe{
+        width: 200px;
     }
 }
-@media screen and (max-width: 992px) {}
+
+@media screen and (max-width: 480px) {
+}
+
+
 

@@ -387,6 +387,7 @@ footer {
 
 main {
   padding: 50px 0;
+  
 }
 
 .lead {
@@ -396,17 +397,32 @@ main {
 picture img {
   width: 100%;
 }
-
+.card__fecha{
+    background-image: url('../assets/mapa.png');
+    background-size: contain;
+}
+.card__merch{
+    background-image: url('../assets/logomerch.png');
+    background-size: contain;
+}
 @media screen and (max-width: 992px) {
+    main{
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 585px) {
     iframe{
         width: 200px;
     }
+    
 }
 
 @media screen and (max-width: 480px) {
+    .section__tour .row{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 

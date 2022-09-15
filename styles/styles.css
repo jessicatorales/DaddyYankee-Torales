@@ -152,6 +152,7 @@ p.texto__inicio {
     font-size: 90px;
     color: white;
     text-align: center;
+    color: rgb(204, 201, 19);
 }
 
 .div__fotos {
@@ -266,6 +267,7 @@ p.texto__inicio {
     color: white;
     display: table;
     margin: auto;
+    color: rgb(204, 201, 19);
 }
 
 .div__biografia p {

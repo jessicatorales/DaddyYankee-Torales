@@ -25,7 +25,7 @@ body {
 
 /* NAV */
 
-.header {
+header {
     background-color: rgba(42,42,40,255);
 }
 
@@ -97,47 +97,45 @@ p.texto__inicio {
 }
 
 .picture__inicio {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+    margin: auto;
+    text-align: center;
 }
 
 
 
 .imagen__inicio {
     border: 5px rgb(44, 42, 42) solid;   
-   width: 100%;
-   
-  
+   width: 100%; 
 }
 
 
 /* FOOTER */
 
-.footer {
+footer {
     margin-top: auto;
 }
 
-.footer ul {
+footer ul {
     background-color: rgba(0,0,0,255);
     list-style: none;
     text-align: end;
+    margin: 0;
 }
 
-.footer img {
+footer img {
     width: 30px;
 }
 
-.footer img:hover{
+footer img:hover{
     transform: scale(1.5,1.5);
     transition-duration: 0.4s;
 }
-.footer li {
+footer li {
     padding: 20px;
     display: inline-block;
 }
 
-.footer a {
+footer a {
     text-decoration: none;
     color: rgb(233, 218, 14);
     font-size: 30px;

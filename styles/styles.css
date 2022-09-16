@@ -8,14 +8,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-section{
-    width:100%;
-}
 body {
     background-image: url("../assets/fondo-daddy2.jpg");
     font-family: vagner;
-    min-height: 100vh;
     display: flex;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -24,7 +21,9 @@ body {
     flex-direction: row;
     
 }
-
+.burger__button{
+    padding-right: 10px;
+}
 .button_yellow{
     text-decoration: none;
     width: 150px;
@@ -65,7 +64,6 @@ header {
 .header__nav__lista ul {
     background-color: rgba(42,42,40,255);
     list-style: none;
-    margin: 15px;
 }
 
 .header__nav__lista li {
@@ -404,9 +402,6 @@ button {
 }
 
 @media screen and (max-width: 992px) {
-    .header__nav__lista a {
-        display: none;
-    }
 
     .div__fotos {
         grid-template-columns: repeat(1, 1fr);

@@ -5,26 +5,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Daddy Yankee</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="header__nav__logo">
-                <a href="../index.html"><img src="../assets/logo.jpg" alt=""></a>
-            </div>
-            <div class="header__nav__lista">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/biografia.html">BIOGRAFIA</a></li>
-                    <li><a href="../pages/albumes.html">ALBUMES</a></li>
-                    <li><a href="../pages/galeria.html">GALERIA</a></li>
-                    <li><a href="../pages/tour.html">TOUR</a></li>
-                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
+    <header class="header container-fluid g-0">
+        <nav class="navbar navbar-expand-xl navbar-dark p-0">
+            <a class="" href="../index.html">
+                <img src="../assets/logo.jpg" alt="Logo" width="100" height="100">
+            </a>
+            <button class="burger__button navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarBar" aria-controls="navbarBar" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="header__nav__lista collapse navbar-collapse" id="navbarBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/biografia.html">BIOGRAFIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/albumes.html">ALBUMES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/tour.html">TOUR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
         </nav>
     </header>
     <main>
@@ -34,46 +53,61 @@
                 <div class="div__tour">
                     <div class="div__tour__sub">
                         <p>AUG 30</p>
-                        <p>MIAMI , FL</p>
-                        <button type="button" class="button_yellow"><b>COMPRAR</b></button>
+                        <p>MIAMI, FL</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
                     </div>
                     <div class="div__tour__sub">
                         <p>SEP 11</p>
-                        <p>TORONTO , CA</p>
-                        <button type="button" class="button_yellow"><b>COMPRAR</b></button>
+                        <p>TORONTO, CA</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
                     </div>
                     <div class="div__tour__sub">
                         <p>SEP 18</p>
-                        <p>DALLAS , TX</p>
-                        <button type="button" class="button_yellow"><b>COMPRAR</b></button>
+                        <p>DALLAS, TX</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
                     </div>
-                        <div class="div__tour__sub">
-                            <p>SEP 28</p>
-                            <p>SANTIAGO, CH</p>
-                            <button type="button" class="button_yellow"><b>COMPRAR</b></button>
-                        </div>
-                        <div class="div__tour__sub">
-                            <p>OCT 02</p>
-                            <p>BUENOS AIRES, AR</p>
-                            <button type="button" class="button_yellow"><b>COMPRAR</b></button>
-                        </div>
-                        <div class="div__tour__sub">
-                            <p>OCT 08</p>
-                            <p>BOGOTÁ, CO</p>
-                            <button type="button" class="button_yellow"><b>COMPRAR</b></button>
-                        </div>
-                        <div class="div__tour__sub">
-                            <p>NOV 21 </p>
-                            <p>TIJUANA, MX</p>
-                            <button type="button" class="button_yellow"><b>COMPRAR</b></button>
-                        </div>
-                        <div class="div__tour__sub">
-                            <p>DEC 16 </p>
-                            <p>SAN ANTONIO, TX</p>
-                            <button type="button" class="button_yellow"><b>COMPRAR</b></button>
-                        </div>
+                    <div class="div__tour__sub">
+                        <p>SEP 28</p>
+                        <p>SANTIAGO, CH</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
+                    </div>
+                    <div class="div__tour__sub">
+                        <p>OCT 05</p>
+                        <p>QUITO, EC</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
+                    </div>
+                    <div class="div__tour__sub">
+                        <p>OCT 02</p>
+                        <p>BUENOS AIRES, AR</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
+                    </div>
+                    <div class="div__tour__sub">
+                        <p>OCT 08</p>
+                        <p>BOGOTÁ, CO</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
+                    </div>
+                    <div class="div__tour__sub">
+                        <p>OCT 18</p>
+                        <p>LIMA, PE</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
+                    </div>
+                    <div class="div__tour__sub">
+                        <p>OCT 22</p>
+                        <p>SAN JOSE, CR</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
+                    </div>
+                    <div class="div__tour__sub">
+                        <p>NOV 21 </p>
+                        <p>TIJUANA, MX</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
+                    </div>
+                    <div class="div__tour__sub">
+                        <p>DEC 16 </p>
+                        <p>SAN ANTONIO, TX</p>
+                        <button type="button" class="button_yellow">COMPRAR</button>
                     </div>
                 </div>
+            </div>
         </section>
     </main>
     <footer class="footer">
@@ -86,6 +120,9 @@
                     <img src="../assets/icon/facebook.png" alt=""></a></li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

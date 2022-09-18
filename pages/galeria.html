@@ -5,28 +5,44 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <link rel="stylesheet" href="../styles/styles.css">
     <title>Daddy Yankee</title>
 </head>
 
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <div class="header__nav__logo">
-                <a href="../index.html"><img src="../assets/logo.jpg" alt=""></a>
-            </div>
-
-            <div class="header__nav__lista">
-                <ul>
-                    <li><a href="../index.html">INICIO</a></li>
-                    <li><a href="../pages/biografia.html">BIOGRAFIA</a></li>
-                    <li><a href="../pages/albumes.html">ALBUMES</a></li>
-                    <li><a href="../pages/galeria.html">GALERIA</a></li>
-                    <li><a href="../pages/tour.html">TOUR</a></li>
-                    <li><a href="../pages/contacto.html">CONTACTO</a></li>
-
+    <header class="header container-fluid g-0">
+        <nav class="navbar navbar-expand-xl navbar-dark p-0">
+            <a class="" href="../index.html">
+                <img src="../assets/logo.jpg" alt="Logo" width="100" height="100">
+            </a>
+            <button class="burger__button navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBar"
+                aria-controls="navbarBar" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="header__nav__lista collapse navbar-collapse" id="navbarBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a aria-current="page" href="../index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/biografia.html">BIOGRAFIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/albumes.html">ALBUMES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/galeria.html">GALERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/tour.html">TOUR</a>
+                    </li>
+                    <li class="nav-item">
+                        <a aria-current="page" href="../pages/contacto.html">CONTACTO</a>
+                    </li>
                 </ul>
-            </div>
+            </nav>
         </nav>
     </header>
     <main>
@@ -46,10 +62,11 @@
                 <div class="div__videos">
                     <p>Videos</p>
                     <div class="div__videos__iframe">
-                        <iframe src="https://www.youtube.com/embed/9xrHcBSagVM"
+                            <iframe src="https://www.youtube.com/embed/9xrHcBSagVM"
                             title="Impacto - Daddy Yankee (Official Video)" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
+                        
 
                         <iframe src="https://www.youtube.com/embed/DWBjvNIJagg"
                             title="Daddy Yankee - La Despedida (Official Video)" frameborder="0"
@@ -78,6 +95,9 @@
                     <img src="../assets/icon/facebook.png" alt=""></a></li>
         </ul>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>

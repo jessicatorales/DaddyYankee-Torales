@@ -306,6 +306,7 @@ footer a {
 .p__tour__title {
     font-size: 60px;
     display: table;
+    text-align: center;
     margin: auto;
     color: rgb(233, 218, 14);
 }

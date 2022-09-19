@@ -1,0 +1,27 @@
+footer {
+    margin-top: auto;
+
+    ul {
+        background-color: rgba(0, 0, 0, 255);
+        list-style: none;
+        text-align: end;
+        margin: 0;
+    }
+    img {
+        width: 30px;
+        &:hover {
+            transform: scale(1.5, 1.5);
+            transition-duration: 0.4s;
+        }
+    }
+
+    li {
+        padding: 20px;
+        display: inline-block;
+    }
+    a {
+        text-decoration: none;
+        color: rgb(233, 218, 14);
+        font-size: 30px;
+    }
+}

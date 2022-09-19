@@ -1,0 +1,41 @@
+@font-face {
+    font-family: vagner;
+    src: url(../fonts/Vanger.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../assets/fondo-daddy2.jpg");
+    font-family: vagner;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+}
+.button_yellow {
+    text-decoration: none;
+    width: 150px;
+    border: none;
+    cursor: pointer;
+    transition-duration: 0.4s;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    align-self: center;
+    color: black;
+    background-color: rgb(236, 222, 27);
+
+    &:hover {
+        background-color: rgb(177, 166, 14);
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -19,23 +19,23 @@ body {
 }
 .button_yellow {
     text-decoration: none;
-    width: 150px;
+    width: $size-150;
     border: none;
     cursor: pointer;
     transition-duration: 0.4s;
     display: inline-block;
-    font-size: 30px;
+    font-size: $size-30;
     font-weight: bold;
     align-self: center;
-    color: black;
-    background-color: rgb(236, 222, 27);
+    color: $color-black-solid;
+    background-color: $color-yellow;
 
     &:hover {
-        background-color: rgb(177, 166, 14);
+        background-color: $color-yellow1;
     }
 
     a {
         text-decoration: none;
-        color: black;
+        color: $color-black;
     }
 }

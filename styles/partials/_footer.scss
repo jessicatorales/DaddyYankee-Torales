@@ -2,13 +2,13 @@ footer {
     margin-top: auto;
 
     ul {
-        background-color: rgba(0, 0, 0, 255);
+        background-color: $color-black;
         list-style: none;
         text-align: end;
         margin: 0;
     }
     img {
-        width: 30px;
+        width: $size-30;
         &:hover {
             transform: scale(1.5, 1.5);
             transition-duration: 0.4s;
@@ -16,12 +16,12 @@ footer {
     }
 
     li {
-        padding: 20px;
+        padding: $size-20;
         display: inline-block;
     }
     a {
         text-decoration: none;
-        color: rgb(233, 218, 14);
-        font-size: 30px;
+        color: $color-yellow;
+        font-size: $size-30;
     }
 }

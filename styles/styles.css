@@ -1,74 +1,3 @@
-header {
-  background-color: rgb(42, 42, 40);
-}
-
-.header__nav {
-  width: 100%;
-  height: 100px;
-  display: flex;
-}
-
-.header__nav__logo img {
-  width: 100px;
-}
-
-.header__nav__lista {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end;
-}
-.header__nav__lista ul {
-  background-color: rgb(42, 42, 40);
-  list-style: none;
-}
-.header__nav__lista li {
-  padding: 20px;
-  text-align: end;
-  display: inline-block;
-}
-.header__nav__lista a {
-  text-decoration: none;
-  padding: 10px;
-  font-weight: bold;
-  transition-duration: 0.4s;
-  color: rgb(233, 218, 14);
-  font-size: 30px;
-}
-.header__nav__lista a:hover {
-  background-color: rgb(233, 218, 14);
-  color: rgb(26, 26, 26);
-}
-
-.burger__button {
-  margin-right: 10px;
-}
-
-footer {
-  margin-top: auto;
-}
-footer ul {
-  background-color: rgb(0, 0, 0);
-  list-style: none;
-  text-align: end;
-  margin: 0;
-}
-footer img {
-  width: 30px;
-}
-footer img:hover {
-  transform: scale(1.5, 1.5);
-  transition-duration: 0.4s;
-}
-footer li {
-  padding: 20px;
-  display: inline-block;
-}
-footer a {
-  text-decoration: none;
-  color: rgb(233, 218, 14);
-  font-size: 30px;
-}
-
 @font-face {
   font-family: vagner;
   src: url(../fonts/Vanger.otf);
@@ -98,15 +27,15 @@ body {
   font-size: 30px;
   font-weight: bold;
   align-self: center;
-  color: black;
-  background-color: rgb(236, 222, 27);
+  color: #000;
+  background-color: rgb(204, 201, 19);
 }
 .button_yellow:hover {
   background-color: rgb(177, 166, 14);
 }
 .button_yellow a {
   text-decoration: none;
-  color: black;
+  color: rgba(0, 0, 0, 0.8);
 }
 
 /* INICIO */
@@ -136,7 +65,7 @@ p.texto__inicio {
   align-items: center;
   font-size: 50px;
   padding: 10px;
-  color: white;
+  color: #fff;
 }
 
 .picture__inicio {
@@ -155,7 +84,7 @@ p.texto__inicio {
 }
 .section__galeria p {
   font-size: 90px;
-  color: white;
+  color: #fff;
   text-align: center;
   color: rgb(204, 201, 19);
 }
@@ -250,7 +179,7 @@ p.texto__inicio {
 
 .div__biografia {
   font-size: 40px;
-  color: white;
+  color: #fff;
   width: 80%;
   justify-content: center;
 }
@@ -260,7 +189,7 @@ p.texto__inicio {
 
 .p__biografia {
   font-size: 70px;
-  color: white;
+  color: #fff;
   display: table;
   margin: auto;
   color: rgb(204, 201, 19);
@@ -276,7 +205,7 @@ p.texto__inicio {
   display: table;
   text-align: center;
   margin: auto;
-  color: rgb(233, 218, 14);
+  color: rgb(204, 201, 19);
 }
 
 .div__tour {
@@ -293,7 +222,7 @@ p.texto__inicio {
 }
 .div__tour__sub p {
   font-size: 30px;
-  color: white;
+  color: #fff;
 }
 
 /* CONTACTO */
@@ -305,10 +234,10 @@ p.texto__inicio {
 }
 .div__contacto .title {
   font-size: 50px;
-  color: rgb(233, 218, 14);
+  color: rgb(204, 201, 19);
 }
 .div__contacto p {
-  color: white;
+  color: #fff;
   font-size: 40px;
 }
 
@@ -327,7 +256,7 @@ p.texto__inicio {
   font-size: 40px;
 }
 .div__contacto__sub label {
-  color: rgb(245, 232, 52);
+  color: rgb(204, 201, 19);
 }
 .div__contacto__sub textarea {
   height: 120px;
@@ -395,4 +324,74 @@ p.texto__inicio {
   .div__videos__iframe iframe {
     width: 95%;
   }
+}
+header {
+  background-color: rgb(42, 42, 40);
+}
+
+.header__nav {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+
+.header__nav__logo img {
+  width: 100px;
+}
+
+.header__nav__lista {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+.header__nav__lista ul {
+  background-color: rgb(42, 42, 40);
+  list-style: none;
+}
+.header__nav__lista li {
+  padding: 20px;
+  text-align: end;
+  display: inline-block;
+}
+.header__nav__lista a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  transition-duration: 0.4s;
+  color: rgb(233, 218, 14);
+  font-size: 30px;
+}
+.header__nav__lista a:hover {
+  background-color: rgb(233, 218, 14);
+  color: rgb(26, 26, 26);
+}
+
+.burger__button {
+  margin-right: 10px;
+}
+
+footer {
+  margin-top: auto;
+}
+footer ul {
+  background-color: rgba(0, 0, 0, 0.8);
+  list-style: none;
+  text-align: end;
+  margin: 0;
+}
+footer img {
+  width: 30px;
+}
+footer img:hover {
+  transform: scale(1.5, 1.5);
+  transition-duration: 0.4s;
+}
+footer li {
+  padding: 20px;
+  display: inline-block;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(204, 201, 19);
+  font-size: 30px;
 }/*# sourceMappingURL=styles.css.map */

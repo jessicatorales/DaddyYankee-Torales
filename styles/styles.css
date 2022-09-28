@@ -1,3 +1,9 @@
+.button_yellow {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+
 @font-face {
   font-family: vagner;
   src: url(../fonts/Vanger.otf);
@@ -18,10 +24,7 @@ body {
 }
 
 .button_yellow {
-  text-decoration: none;
   width: 150px;
-  border: none;
-  cursor: pointer;
   transition-duration: 0.4s;
   display: inline-block;
   font-size: 30px;
@@ -29,9 +32,6 @@ body {
   align-self: center;
   color: #000;
   background-color: rgb(204, 201, 19);
-}
-.button_yellow:hover {
-  background-color: rgb(177, 166, 14);
 }
 .button_yellow a {
   text-decoration: none;
@@ -128,8 +128,8 @@ p.texto__inicio {
 
 .div__videos__iframe {
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  flex-direction: row;
 }
 .div__videos__iframe iframe {
   width: 100%;
@@ -142,9 +142,9 @@ p.texto__inicio {
 /* ALBUMES */
 .div__albumes {
   display: flex;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
   background-color: rgba(0, 0, 0, 0.8);
 }
 .div__albumes iframe {
@@ -164,15 +164,15 @@ p.texto__inicio {
 }
 .div__albumes .div__album {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   margin: 10px;
 }
 
 /* BIOGRAFIA */
 .section__flex {
-  justify-content: center;
   display: flex;
+  justify-content: center;
   flex-direction: row;
   background-color: rgba(0, 0, 0, 0.8);
 }
@@ -210,8 +210,8 @@ p.texto__inicio {
 
 .div__tour {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
 }
 
 .div__tour__sub {
@@ -228,8 +228,8 @@ p.texto__inicio {
 /* CONTACTO */
 .div__contacto {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   width: 60%;
 }
 .div__contacto .title {
@@ -250,8 +250,8 @@ p.texto__inicio {
 
 .div__contacto__sub {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  flex-direction: column;
   margin: 20px;
   font-size: 40px;
 }

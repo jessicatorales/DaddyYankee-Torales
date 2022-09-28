@@ -8,8 +8,7 @@
     flex-direction: row;
 }
 .div__titulo {
-    display: flex;
-    justify-content: center;
+    @include mixin-flex-center;
 
     .titulo__inicio {
         color: $color-yellow;
@@ -20,8 +19,7 @@
 }
 
 p.texto__inicio {
-    display: flex;
-    justify-content: center;
+    @include mixin-flex-center;
     align-items: center;
     font-size: $size-50;
     padding: $size-10;
@@ -61,8 +59,7 @@ p.texto__inicio {
 }
 
 .div__fotos__img {
-    display: flex;
-    justify-content: center;
+    @include mixin-flex-center;
     &:nth-of-type(1) {
         grid-column: 1 / 5;
     }
@@ -88,9 +85,8 @@ p.texto__inicio {
 }
 
 .div__videos__iframe {
-    display: flex;
+    @include mixin-flex-center;
     flex-direction: row;
-    justify-content: center;
     
     iframe {
         width: 100%;
@@ -105,10 +101,9 @@ p.texto__inicio {
 /* ALBUMES */
 
 .div__albumes {
-    display: flex;
+    @include mixin-flex-center;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     background-color: $color-black;
     iframe {
         width: 100%;
@@ -126,9 +121,8 @@ p.texto__inicio {
         text-align: center;
     }
     .div__album {
-        display: flex;
+        @include mixin-flex-center;
         flex-direction: column;
-        justify-content: center;
         margin: $size-10;
     }
 }
@@ -137,8 +131,7 @@ p.texto__inicio {
 /* BIOGRAFIA */
 
 .section__flex {
-    justify-content: center;
-    display: flex;
+    @include mixin-flex-center;
     flex-direction: row;
     background-color: $color-black;
 }
@@ -178,9 +171,8 @@ p.texto__inicio {
 }
 
 .div__tour {
-    display: flex;
+    @include mixin-flex-center;
     flex-direction: column;
-    justify-content: center;
 }
 
 .div__tour__sub {
@@ -199,9 +191,8 @@ p.texto__inicio {
 /* CONTACTO */
 
 .div__contacto {
-    display: flex;
+    @include mixin-flex-center;
     flex-direction: column;
-    justify-content: center;
     width: 60%;
     .title {
         font-size: $size-50;
@@ -222,9 +213,8 @@ p.texto__inicio {
 
 
 .div__contacto__sub {
-    display: flex;
+    @include mixin-flex-center;
     flex-direction: column;
-    justify-content: center;
     margin: $size-20;
     font-size: $size-40;
     label {

@@ -17,25 +17,25 @@ body {
     height: 100vh;
     flex-direction: column;
 }
+
 .button_yellow {
-    text-decoration: none;
-    width: $size-150;
-    border: none;
-    cursor: pointer;
+    @extend %extend-botones;
+    width: map-get($tamanios, 150 );
     transition-duration: 0.4s;
     display: inline-block;
-    font-size: $size-30;
+    font-size: map-get($tamanios, 30);
     font-weight: bold;
     align-self: center;
     color: $color-black-solid;
-    background-color: $color-yellow;
+    background-color: map-get($colores, color-amarillo );
+    
 
     &:hover {
-        background-color: $color-yellow1;
+        background-color: map-get($colores, color color-amarillo-oscuro );
     }
 
     a {
         text-decoration: none;
-        color: $color-black;
+        color: map-get($colores, color-negro );
     }
 }

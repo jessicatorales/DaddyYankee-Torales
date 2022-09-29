@@ -1,9 +1,3 @@
-.button_yellow {
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-}
-
 @font-face {
   font-family: vagner;
   src: url(../fonts/Vanger.otf);
@@ -24,6 +18,9 @@ body {
 }
 
 .button_yellow {
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
   width: 150px;
   transition-duration: 0.4s;
   display: inline-block;
@@ -36,6 +33,9 @@ body {
 .button_yellow a {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.8);
+}
+.button_yellow:hover {
+  background-color: rgb(177, 166, 14);
 }
 
 /* INICIO */
@@ -82,7 +82,7 @@ p.texto__inicio {
 .section__galeria {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.section__galeria p {
+.section__galeria h2 {
   font-size: 90px;
   color: #fff;
   text-align: center;
@@ -152,7 +152,7 @@ p.texto__inicio {
   height: 380px;
   margin: 10px;
 }
-.div__albumes p {
+.div__albumes h3 {
   font-size: 30px;
   color: rgb(235, 229, 124);
   text-align: center;
@@ -244,7 +244,7 @@ p.texto__inicio {
 .contacto__primero {
   margin: 40px;
 }
-.contacto__primero p {
+.contacto__primero h1, .contacto__primero p {
   text-align: center;
 }
 

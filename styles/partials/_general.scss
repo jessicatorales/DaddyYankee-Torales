@@ -19,7 +19,9 @@ body {
 }
 
 .button_yellow {
-    @extend %extend-botones;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
     width: map-get($tamanios, 150 );
     transition-duration: 0.4s;
     display: inline-block;
@@ -27,15 +29,14 @@ body {
     font-weight: bold;
     align-self: center;
     color: $color-black-solid;
-    background-color: map-get($colores, color-amarillo );
+    background-color: map-get($colores, color-amarillo);
     
-
-    &:hover {
-        background-color: map-get($colores, color color-amarillo-oscuro );
-    }
-
     a {
         text-decoration: none;
-        color: map-get($colores, color-negro );
+        color: map-get($colores, color-negro);
+    }
+
+    &:hover {
+        background-color: map-get($colores, color-amarillo-oscuro);
     }
 }

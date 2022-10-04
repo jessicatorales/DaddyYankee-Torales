@@ -22,21 +22,21 @@ body {
     text-decoration: none;
     border: none;
     cursor: pointer;
-    width: map-get($tamanios, 150 );
+    width: $size-150;
     transition-duration: 0.4s;
     display: inline-block;
-    font-size: map-get($tamanios, 30);
+    font-size: $size-30;
     font-weight: bold;
     align-self: center;
     color: $color-black-solid;
-    background-color: map-get($colores, color-amarillo);
+    background-color: $color-yellow;
     
     a {
         text-decoration: none;
-        color: map-get($colores, color-negro);
+        color: $color-black;
     }
 
     &:hover {
-        background-color: map-get($colores, color-amarillo-oscuro);
+        background-color: $color-yellow1
     }
 }

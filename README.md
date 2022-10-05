@@ -1,4 +1,6 @@
-# DaddyYankee-Torales
+# DaddyYankee-Coderhouse
+
+## Alumna: Jessica Torales
 
 En el archivo index.html sumé el SEO con las siguientes características:
 

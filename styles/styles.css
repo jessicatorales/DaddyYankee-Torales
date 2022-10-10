@@ -42,24 +42,21 @@ body {
 .section__index {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-.div__inicio {
+.section__index .div__inicio {
   display: flex;
   flex-direction: row;
 }
-
-.div__titulo {
+.section__index .div__titulo {
   display: flex;
   justify-content: center;
 }
-.div__titulo .titulo__inicio {
+.section__index .div__titulo .titulo__inicio {
   color: rgb(204, 201, 19);
   font-size: 80px;
   text-align: center;
   margin: 30px;
 }
-
-p.texto__inicio {
+.section__index p.texto__inicio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,15 +64,16 @@ p.texto__inicio {
   padding: 10px;
   color: #fff;
 }
-
-.picture__inicio {
+.section__index .picture__inicio {
   margin: auto;
   text-align: center;
 }
-
-.imagen__inicio {
+.section__index .imagen__inicio {
   border: 5px rgb(44, 42, 42) solid;
   width: 100%;
+}
+.section__index .index__card {
+  width: 18rem;
 }
 
 /* GALERIA */
@@ -360,12 +358,12 @@ header {
   background-color: rgb(42, 42, 40);
   list-style: none;
 }
-.header__nav__lista li {
+.header__nav__lista ul li {
   padding: 20px;
   text-align: end;
   display: inline-block;
 }
-.header__nav__lista a {
+.header__nav__lista ul li a {
   text-decoration: none;
   padding: 10px;
   font-weight: bold;
@@ -373,7 +371,7 @@ header {
   color: rgb(233, 218, 14);
   font-size: 30px;
 }
-.header__nav__lista a:hover {
+.header__nav__lista ul li a:hover {
   background-color: rgb(233, 218, 14);
   color: rgb(26, 26, 26);
 }
@@ -391,19 +389,19 @@ footer ul {
   text-align: end;
   margin: 0;
 }
-footer img {
-  width: 30px;
-}
-footer img:hover {
-  transform: scale(1.5, 1.5);
-  transition-duration: 0.4s;
-}
-footer li {
+footer ul li {
   padding: 20px;
   display: inline-block;
 }
-footer a {
+footer ul li a {
   text-decoration: none;
   color: rgb(204, 201, 19);
   font-size: 30px;
+}
+footer ul li img {
+  width: 30px;
+}
+footer ul li img:hover {
+  transform: scale(1.5, 1.5);
+  transition-duration: 0.4s;
 }/*# sourceMappingURL=styles.css.map */

@@ -20,27 +20,28 @@ header {
     ul {
         background-color: $color-gray-header;
         list-style: none;
-    }
 
-    li {
-        padding: $size-20;
-        text-align: end;
-        display: inline-block;
-    }
-    a {
-        text-decoration: none;
-        padding: $size-10;
-        font-weight: bold;
-        transition-duration: 0.4s;
-        color: $color-yellow-header;
-        font-size: $size-30;
-        &:hover {
-            background-color: $color-yellow-header;
-            color: $color-gray-header1;
-        }
-    }
+        li {
+            padding: $size-20;
+            text-align: end;
+            display: inline-block;
     
+            a {
+                text-decoration: none;
+                padding: $size-10;
+                font-weight: bold;
+                transition-duration: 0.4s;
+                color: $color-yellow-header;
+                font-size: $size-30;
+                &:hover {
+                    background-color: $color-yellow-header;
+                    color: $color-gray-header1;
+                }
+            }
+        }
+    }    
 }
+
 .burger__button {
     margin-right: $size-10;
 }

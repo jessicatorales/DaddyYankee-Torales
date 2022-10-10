@@ -6,22 +6,23 @@ footer {
         list-style: none;
         text-align: end;
         margin: 0;
-    }
-    img {
-        width: $size-30;
-        &:hover {
-            transform: scale(1.5, 1.5);
-            transition-duration: 0.4s;
-        }
-    }
 
-    li {
-        padding: $size-20;
-        display: inline-block;
-    }
-    a {
-        text-decoration: none;
-        color: $color-yellow;
-        font-size: $size-30;
+        li {
+            padding: $size-20;
+            display: inline-block;
+            a {
+                text-decoration: none;
+                color: $color-yellow;
+                font-size: $size-30;
+            }
+            img {
+                width: $size-30;
+                &:hover {
+                    transform: scale(1.5, 1.5);
+                    transition-duration: 0.4s;
+                }
+            }
+        }
+        
     }
 }

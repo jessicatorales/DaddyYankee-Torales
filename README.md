@@ -2,6 +2,7 @@
 
 ## Alumna: Jessica Torales
 
+### Este es un proyecto de un sitio web que hice para el curso de desarrollo web de CoderHouse.
 
 #### Documento Explicativo SEO
 En el archivo index.html sumé el SEO con las siguientes características:

@@ -42,21 +42,24 @@ body {
 .section__index {
   background-color: rgba(0, 0, 0, 0.8);
 }
-.section__index .div__inicio {
+
+.div__inicio {
   display: flex;
   flex-direction: row;
 }
-.section__index .div__titulo {
+
+.div__titulo {
   display: flex;
   justify-content: center;
 }
-.section__index .div__titulo .titulo__inicio {
+.div__titulo .titulo__inicio {
   color: rgb(204, 201, 19);
   font-size: 80px;
   text-align: center;
   margin: 30px;
 }
-.section__index p.texto__inicio {
+
+p.texto__inicio {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -64,16 +67,19 @@ body {
   padding: 10px;
   color: #fff;
 }
-.section__index .picture__inicio {
+
+.index__card {
+  width: 18rem;
+}
+
+.picture__inicio {
   margin: auto;
   text-align: center;
 }
-.section__index .imagen__inicio {
+
+.imagen__inicio {
   border: 5px rgb(44, 42, 42) solid;
   width: 100%;
-}
-.section__index .index__card {
-  width: 18rem;
 }
 
 /* GALERIA */

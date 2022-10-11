@@ -1,46 +1,45 @@
 /* INICIO */
 .section__index {
     background-color: $color-black;
+}
+.div__inicio {
+    display: flex;
+    flex-direction: row;
+}
 
-    .div__inicio {
-        display: flex;
-        flex-direction: row;
-    }
-    
-    .div__titulo {
-        @include mixin-flex-center;
-    
-        .titulo__inicio {
-            color: $color-yellow;
-            font-size: $size-80;
-            text-align: center;
-            margin: $size-30;
-        }
-    }
-    
-    p.texto__inicio {
-        @include mixin-flex-center;
-        align-items: center;
-        font-size: $size-50;
-        padding: $size-10;
-        color: $color-white;
-    }
-    
-    .picture__inicio {
-        margin: auto;
+.div__titulo {
+    @include mixin-flex-center;
+
+    .titulo__inicio {
+        color: $color-yellow;
+        font-size: $size-80;
         text-align: center;
-    }
-    
-    .imagen__inicio {
-        border: $size-5 $color-gray solid;
-        width: 100%;
-    }
-
-    .index__card{
-        width: 18rem;
+        margin: $size-30;
     }
 }
 
+p.texto__inicio {
+    @include mixin-flex-center;
+    align-items: center;
+    font-size: $size-50;
+    padding: $size-10;
+    color: $color-white;
+}
+
+
+
+.index__card{
+    width: 18rem;
+}
+.picture__inicio {
+    margin: auto;
+    text-align: center;
+}
+
+.imagen__inicio {
+    border: $size-5 $color-gray solid;
+    width: 100%;
+}
 
 
 
